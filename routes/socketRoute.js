@@ -6,4 +6,9 @@ router.get("/",(req,res)=>{
     res.send({"hello":"world"});
 })
 
+router.post("/", (req,res)=>{
+    console.log("SERVING POST");
+    console.log(req);
+    res.send();
+})
 module.exports = router;
